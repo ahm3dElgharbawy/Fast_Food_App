@@ -41,12 +41,12 @@ class OnboardingScreen extends StatelessWidget {
                                 icon: Icons.arrow_forward_ios_rounded,
                                 iconDirection: AxisDirection.right,
                                 width: 70,
-                                height: 40,
+                                height: 35,
                                 title: "Skip",
                               ),
                             ],
                           )
-                        : const SizedBox(height: 40),
+                        : const SizedBox(height: 35),
                     //? Page view
                     CustomOnboardingPageView(
                       pageController: cubit.pageController,

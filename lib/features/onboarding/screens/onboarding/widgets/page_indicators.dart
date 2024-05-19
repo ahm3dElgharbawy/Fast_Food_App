@@ -13,12 +13,12 @@ class CustomPageIndicators extends StatelessWidget {
         ...List.generate(
           4,
           (index) => AnimatedContainer(
-            width: 10,
+            width: activeDot == index ? 20 : 10,
             height: 10,
             duration: const Duration(milliseconds: 500),
             decoration: BoxDecoration(
               color: activeDot == index ? AppColors.primaryColor : Colors.grey[300],
-              shape: BoxShape.circle
+              borderRadius: BorderRadius.circular(5)
             ),
             margin: const EdgeInsets.symmetric(horizontal: 5),
           ),

@@ -6,5 +6,10 @@ class ImagesStrings {
   static const String onboarding4 = "assets/images/onboarding_4.svg";
   // welcome
   static const String welcome = "assets/images/welcome.svg";
+
+  // login
+  static const String logo = "assets/icons/logo.png";
+  static const String facebook = "assets/icons/facebook.svg";
+  static const String google = "assets/icons/google.svg";
   
 }

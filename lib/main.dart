@@ -1,6 +1,6 @@
 import 'package:fast_food/core/constants/app_colors.dart';
 import 'package:fast_food/core/routing/router.dart';
-import 'package:fast_food/features/onboarding/screens/onboarding/onboarding.dart';
+import 'package:fast_food/features/onboarding/screens/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
       onGenerateRoute : MyRouter.generateRoute,
       theme: ThemeData(
         fontFamily: "Poppins",
-        useMaterial3: true,
+        useMaterial3: false,
         primaryColor: AppColors.primaryColor,
       ),
-      home: const OnboardingScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }

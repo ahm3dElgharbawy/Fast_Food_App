@@ -1,3 +1,4 @@
+import 'package:fast_food/core/constants/enums.dart';
 import 'package:fast_food/core/constants/sizes.dart';
 import 'package:fast_food/core/constants/styles.dart';
 import 'package:flutter/material.dart';
@@ -22,11 +23,11 @@ class CustomOnboardingPageViewItem extends StatelessWidget {
             ),
           ),
           const SizedBox(height: CustomSizes.spaceBtwItems),
-          Text(title,style: AppStyles.textStyle28Bold,textAlign: TextAlign.center),
+          Text(title,style: AppStyles.textStyle(28, TextFontWeight.bold),textAlign: TextAlign.center),
           const SizedBox(height: CustomSizes.spaceBtwItems),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: CustomSizes.lg),
-            child: Text(subtitle,style: AppStyles.textStyle14Regular,textAlign: TextAlign.center),
+            child: Text(subtitle,style: AppStyles.textStyle(14, TextFontWeight.normal),textAlign: TextAlign.center),
           ),
         ],
       ),

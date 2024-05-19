@@ -25,7 +25,8 @@ class CustomElevatedButtonWithIcon extends StatelessWidget {
         onPressed: onTap,
         style: ElevatedButton.styleFrom(
           backgroundColor: Theme.of(context).primaryColor,
-          padding: EdgeInsets.zero
+          shape: const StadiumBorder(),
+          padding: EdgeInsets.zero,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,

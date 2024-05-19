@@ -1,7 +1,8 @@
-class CustomSizes {
+abstract class CustomSizes {
   static const double defaultSpace = 16;
   static const double spaceBtwItems = 16.0;
   static const double spaceBtwSections = 32.0;
+  static const double spaceBtwTextFields = 25;
 
    // Padding and margin sizes
   static const double xs = 4.0;

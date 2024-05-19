@@ -1,6 +1,9 @@
+import 'package:fast_food/core/constants/enums.dart';
 import 'package:fast_food/core/constants/images_strings.dart';
+import 'package:fast_food/core/constants/routes_names.dart';
 import 'package:fast_food/core/constants/sizes.dart';
 import 'package:fast_food/core/constants/styles.dart';
+import 'package:fast_food/core/helpers/extensions.dart';
 import 'package:fast_food/core/widgets/buttons/elevated_button.dart';
 import 'package:fast_food/core/widgets/buttons/outlined_button.dart';
 import 'package:fast_food/features/onboarding/screens/welcome/widgets/terms_and_conditions.dart';
@@ -25,25 +28,32 @@ class WelcomeScreen extends StatelessWidget {
                   height: 250,
                 ),
                 const SizedBox(height: CustomSizes.spaceBtwItems),
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: CustomSizes.defaultSpace),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: CustomSizes.defaultSpace),
                   child: Column(
                     children: [
-                      Text("Welcome to quickbite",
-                          style: AppStyles.textStyle24Bold),
-                      SizedBox(height: CustomSizes.spaceBtwItems),
+                      Text(
+                        "Welcome to quick dish",
+                        style: AppStyles.textStyle(24, TextFontWeight.bold),
+                      ),
+                      const SizedBox(height: CustomSizes.spaceBtwItems),
                       Text(
                         "Join our app by signing up or login to unlock seamless ordering experiences tailored just for you.",
-                        style: AppStyles.textStyle14Medium,
+                        style: AppStyles.textStyle(14, TextFontWeight.medium),
                         textAlign: TextAlign.center,
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: CustomSizes.spaceBtwSections),
-                CustomElevatedButton(title: "SIGN UP", onTap: () {}),
+                CustomElevatedButton(title: "SIGN UP", onTap: () {
+
+                }),
                 const SizedBox(height: CustomSizes.spaceBtwItems),
-                CustomOutlinedButton(title: "LOGIN", onTap: (){}),
+                CustomOutlinedButton(title: "LOGIN", onTap: () {
+                  context.pushReplacementAllNamed(loginRoute);
+                }),
                 const SizedBox(height: CustomSizes.spaceBtwSections),
                 const CustomTermsAndConditions()
               ],

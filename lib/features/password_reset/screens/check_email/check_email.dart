@@ -26,16 +26,16 @@ class CheckEmailScreen extends StatelessWidget {
                 children: [
                   const CustomCircularContainerWithIcon(icon: Icons.mark_email_read_outlined),
                   const SizedBox(height: CustomSizes.spaceBtwItems),
-                  Text(
+                  const Text(
                     "Check Email",
-                    style: AppStyles.textStyle(28, TextFontWeight.semibold),
+                    style: TextStyles.semibold28,
                   ),
                   const SizedBox(height: CustomSizes.spaceBtwItems / 2),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30),
                     child: Text(
                       "Please Check Your Email to create a new password",
-                      style: AppStyles.textStyle(14, TextFontWeight.normal),
+                      style: TextStyles.regular14,
                       textAlign: TextAlign.center,
                     ),
                   ),

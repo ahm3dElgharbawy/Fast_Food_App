@@ -12,9 +12,9 @@ class RememberPasswordWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           "Remember the Password? ",
-          style: AppStyles.textStyle(14, TextFontWeight.medium),
+          style: TextStyles.medium14,
         ),
         InkWell(
           onTap: () {
@@ -22,8 +22,9 @@ class RememberPasswordWidget extends StatelessWidget {
           },
           child: Text(
             "Login Now",
-            style: AppStyles.textStyle(14, TextFontWeight.bold,
-                decoration: TextDecoration.underline),
+            style: TextStyles.bold14.copyWith(
+              decoration: TextDecoration.underline,
+            ),
           ),
         ),
       ],

@@ -21,11 +21,7 @@ class AlreadyHaveAccountWidget extends StatelessWidget {
           recognizer: TapGestureRecognizer()..onTap = () {
             context.pushReplacementNamed(loginRoute);
           },
-          style: AppStyles.textStyle(
-            14,
-            TextFontWeight.semibold,
-            decoration: TextDecoration.underline,
-          ),
+          style: TextStyles.regular14
         ),
       ]),
     );

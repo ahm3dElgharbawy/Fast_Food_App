@@ -1,5 +1,5 @@
-import 'package:fast_food/core/constants/app_colors.dart';
-import 'package:fast_food/core/routing/router.dart';
+import 'package:fast_food/core/helpers/on_generate_routes.dart';
+import 'package:fast_food/core/theme/app_themes/app_themes.dart';
 import 'package:fast_food/features/onboarding/screens/welcome/welcome.dart';
 import 'package:flutter/material.dart';
 
@@ -14,12 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Fast Food',
       debugShowCheckedModeBanner: false,
-      onGenerateRoute : MyRouter.generateRoute,
-      theme: ThemeData(
-        fontFamily: "Poppins",
-        useMaterial3: false,
-        primaryColor: AppColors.primaryColor,
-      ),
+      onGenerateRoute: onGenerateRoutes,
+      theme: AppThemes.light,
       home: const WelcomeScreen(),
     );
   }

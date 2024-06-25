@@ -9,8 +9,7 @@ import 'package:fast_food/features/password_reset/screens/reset_password/reset_p
 import 'package:fast_food/features/password_reset/screens/success_reset/success_reset_password.dart';
 import 'package:flutter/material.dart';
 
-class MyRouter {
-  static Route<dynamic> generateRoute(RouteSettings settings) {
+Route<dynamic> onGenerateRoutes(RouteSettings settings) {
     switch (settings.name) {
       case onboardingRoute:
         return MaterialPageRoute(builder: (_) => const OnboardingScreen());
@@ -36,4 +35,3 @@ class MyRouter {
         );
     }
   }
-}

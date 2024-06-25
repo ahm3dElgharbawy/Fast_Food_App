@@ -43,7 +43,7 @@ class _CustomPasswordTextFieldState extends State<CustomPasswordTextField> {
         ),
         label: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 5),
-            child: Text(widget.label,style: AppStyles.textStyle(18, TextFontWeight.medium),),
+            child: Text(widget.label,style: TextStyles.medium18,),
         ),
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 25, vertical: 15),

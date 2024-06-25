@@ -23,19 +23,19 @@ class ForgetPasswordScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Forget Password",
-                            style: AppStyles.textStyle(28, TextFontWeight.semibold),
+                            style: TextStyles.semibold28,
                           ),
-                          const SizedBox(height: CustomSizes.spaceBtwItems / 2),
+                          SizedBox(height: CustomSizes.spaceBtwItems / 2),
                           Text(
                             "Enter Your Registered Email Below",
-                            style: AppStyles.textStyle(14, TextFontWeight.normal),
+                            style: TextStyles.regular14,
                           ),
                         ]),
                   ),

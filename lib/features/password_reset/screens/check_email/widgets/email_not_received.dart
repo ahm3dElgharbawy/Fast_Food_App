@@ -10,16 +10,16 @@ class EmailNotReceivedWidget extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
+        const Text(
           "Email Not Received? ",
-          style: AppStyles.textStyle(14, TextFontWeight.medium),
+          style: TextStyles.medium14,
         ),
         InkWell(
           onTap: () {},
           child: Text(
             "Resend",
-            style: AppStyles.textStyle(14, TextFontWeight.bold,
-                decoration: TextDecoration.underline),
+            style: TextStyles.bold14
+                .copyWith(decoration: TextDecoration.underline),
           ),
         ),
       ],

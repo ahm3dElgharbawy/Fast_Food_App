@@ -19,7 +19,7 @@ class CustomTextField extends StatelessWidget {
         floatingLabelBehavior: FloatingLabelBehavior.always,
         label: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 5),
-          child: Text(label,style: AppStyles.textStyle(18, TextFontWeight.medium),),
+          child: Text(label,style: TextStyles.medium18),
         ),
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 25, vertical: 15),

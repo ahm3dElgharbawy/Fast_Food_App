@@ -28,19 +28,19 @@ class WelcomeScreen extends StatelessWidget {
                   height: 250,
                 ),
                 const SizedBox(height: CustomSizes.spaceBtwItems),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
+                const Padding(
+                  padding: EdgeInsets.symmetric(
                       horizontal: CustomSizes.defaultSpace),
                   child: Column(
                     children: [
                       Text(
                         "Welcome to quick dish",
-                        style: AppStyles.textStyle(24, TextFontWeight.bold),
+                        style: TextStyles.bold24,
                       ),
-                      const SizedBox(height: CustomSizes.spaceBtwItems),
+                      SizedBox(height: CustomSizes.spaceBtwItems),
                       Text(
                         "Join our app by signing up or login to unlock seamless ordering experiences tailored just for you.",
-                        style: AppStyles.textStyle(14, TextFontWeight.medium),
+                        style: TextStyles.medium14,
                         textAlign: TextAlign.center,
                       ),
                     ],

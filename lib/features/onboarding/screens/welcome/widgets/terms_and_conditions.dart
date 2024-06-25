@@ -10,8 +10,7 @@ class CustomTermsAndConditions extends StatelessWidget {
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-          style: AppStyles.textStyle(14, TextFontWeight.normal,
-              color: Colors.black, height: 1.5),
+          style: TextStyles.regular14.copyWith(height: 1.5),
           children: [
             const TextSpan(text: "By"),
             TextSpan(
@@ -30,9 +29,7 @@ class CustomTermsAndConditions extends StatelessWidget {
             const TextSpan(text: "you have agreed to our"),
             TextSpan(
               text: " Terms and Conditions ",
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Theme.of(context).primaryColor),
+              style: TextStyles.regular14.copyWith(color: Theme.of(context).primaryColor)
             ),
           ]),
     );

@@ -23,11 +23,11 @@ class CustomOnboardingPageViewItem extends StatelessWidget {
             ),
           ),
           const SizedBox(height: CustomSizes.spaceBtwItems),
-          Text(title,style: AppStyles.textStyle(28, TextFontWeight.bold),textAlign: TextAlign.center),
+          Text(title,style: TextStyles.bold28,textAlign: TextAlign.center),
           const SizedBox(height: CustomSizes.spaceBtwItems),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: CustomSizes.lg),
-            child: Text(subtitle,style: AppStyles.textStyle(14, TextFontWeight.normal),textAlign: TextAlign.center),
+            child: Text(subtitle,style: TextStyles.regular14,textAlign: TextAlign.center),
           ),
         ],
       ),

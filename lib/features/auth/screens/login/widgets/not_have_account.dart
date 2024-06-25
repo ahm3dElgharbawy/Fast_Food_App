@@ -21,11 +21,7 @@ class NotHaveAccountWidget extends StatelessWidget {
           recognizer: TapGestureRecognizer()..onTap = () {
             context.pushReplacementNamed(registerRoute);
           },
-          style: AppStyles.textStyle(
-            14,
-            TextFontWeight.semibold,
-            decoration: TextDecoration.underline,
-          ),
+          style: TextStyles.semibold14
         ),
       ]),
     );

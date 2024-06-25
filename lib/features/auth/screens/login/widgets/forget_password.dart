@@ -17,9 +17,9 @@ class ForgetPasswordWidget extends StatelessWidget {
         onPressed: () {
           context.pushReplacementNamed(forgetPasswordRoute);
         },
-        child: Text(
+        child: const Text(
           "Forget Password?",
-          style: AppStyles.textStyle(14, TextFontWeight.medium),
+          style: TextStyles.medium14,
         ),
       ),
     );

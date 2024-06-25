@@ -24,16 +24,16 @@ class SuccessResetPasswordScreen extends StatelessWidget {
                 children: [
                   const CustomCircularContainerWithIcon(icon: Icons.verified_user_outlined),
                   const SizedBox(height: CustomSizes.spaceBtwItems),
-                  Text(
+                  const Text(
                     "Password Updated",
-                    style: AppStyles.textStyle(28, TextFontWeight.semibold),
+                    style: TextStyles.semibold28,
                   ),
                   const SizedBox(height: CustomSizes.spaceBtwItems / 2),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30),
                     child: Text(
                       "Congratulation Your Password Has been Updated",
-                      style: AppStyles.textStyle(14, TextFontWeight.normal),
+                      style: TextStyles.regular14,
                       textAlign: TextAlign.center,
                     ),
                   ),

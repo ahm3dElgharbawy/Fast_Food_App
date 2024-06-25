@@ -13,34 +13,34 @@ class ResetPasswordScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(CustomSizes.defaultSpace),
+              padding: EdgeInsets.all(CustomSizes.defaultSpace),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 10),
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Change Password",
-                            style: AppStyles.textStyle(28, TextFontWeight.semibold),
+                            style: TextStyles.semibold28,
                           ),
-                          const SizedBox(height: CustomSizes.spaceBtwItems / 2),
+                          SizedBox(height: CustomSizes.spaceBtwItems / 2),
                           Text(
                             "Enter Your Password Below",
-                            style: AppStyles.textStyle(14, TextFontWeight.normal),
+                            style:TextStyles.regular14,
                           ),
                         ]),
                   ),
-                  const SizedBox(height: CustomSizes.spaceBtwSections * 2),
-                  const ResetPasswordFormWidget()
+                  SizedBox(height: CustomSizes.spaceBtwSections * 2),
+                  ResetPasswordFormWidget()
                 ],
               ),
             ),
